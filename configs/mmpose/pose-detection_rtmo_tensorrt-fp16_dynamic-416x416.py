@@ -21,8 +21,8 @@ backend_config = dict(
             input_shapes=dict(
                 input=dict(
                     min_shape=[1, 3, 416, 416],
-                    opt_shape=[1, 3, 416, 416],
-                    max_shape=[1, 3, 416, 416])))
+                    opt_shape=[4, 3, 416, 416],
+                    max_shape=[4, 3, 416, 416])))
     ])
 
 codebase_config = dict(
