@@ -35,10 +35,17 @@ elif [ $MODEL -eq 4 ]; then
 
 elif [ $MODEL -eq 5 ]; then
     DEPLOY_CFG=configs/mmpose/pose-detection_rtmo_tensorrt-fp16_dynamic-416x416.py
-    MODEL_CFG=../GolfPose/models/bottomup/golfclub/v0/rtmo-t_golfclub-416x416.py
-    #MODEL=../GolfPose/models/bottomup/golfclub/v0/epoch_60.pth
-    MODEL=../GolfPose/models/bottomup/golfclub/v0/tensorrt/end2end.engine
+    MODEL_CFG=../GolfPose/models/bottomup/golfclub/v2/rtmo-t_golfclub-416x416.py
+    #MODEL=../GolfPose/models/bottomup/golfclub/v2/epoch_80.pth
+    MODEL=../GolfPose/models/bottomup/golfclub/v2/tensorrt/end2end.engine
     SHAPE=416x416
+
+elif [ $MODEL -eq 10 ]; then
+    DEPLOY_CFG=configs/mmpose/pose-detection_rtmo_tensorrt-fp16_dynamic-640x640.py
+    MODEL_CFG=../GolfPose/models/bottomup/golfclub/sv0/rtmo-s_golfclub-640x640.py
+    #MODEL=../GolfPose/models/bottomup/golfclub/sv0/epoch_100.pth
+    MODEL=../GolfPose/models/bottomup/golfclub/sv0/tensorrt/end2end.engine
+    SHAPE=640x640
 
 elif [ $MODEL -eq 6 ]; then
     DEPLOY_CFG=configs/mmpose/pose-detection_rtmo_tensorrt-fp16_dynamic-416x416.py
