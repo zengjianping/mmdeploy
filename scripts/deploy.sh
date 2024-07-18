@@ -62,9 +62,9 @@ elif [ $MODEL -eq 8 ]; then
 
 elif [ $MODEL -eq 9 ]; then
     DEPLOY_CFG=configs/mmpose/pose-detection_simcc_tensorrt_dynamic-256x192.py
-    MODEL_CFG=../GolfPose/models/topdown/halpe28/v0/rtmpose-m_halpe28-256x192.py
-    CHECKPOINT=../GolfPose/models/topdown/halpe28/v0/best_AUC_epoch_100.pth
-    WORK_DIR=../GolfPose/models/topdown/halpe28/v0/tensorrt
+    MODEL_CFG=../GolfPose/models/topdown/halpe28/v1/rtmpose-m_halpe28-256x192.py
+    CHECKPOINT=../GolfPose/models/topdown/halpe28/v1/best_AUC_epoch_100.pth
+    WORK_DIR=../GolfPose/models/topdown/halpe28/v1/tensorrt
 
 else
     echo "Not supported!"
