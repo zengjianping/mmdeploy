@@ -10,3 +10,6 @@ include mmdeploy/lib/*.pyd
 include mmdeploy/backend/torchscript/*.so
 include mmdeploy/backend/torchscript/*.dll
 include mmdeploy/backend/torchscript/*.pyd
+recursive-include mmdeploy/.mim/configs *.py *.yml
+recursive-include mmdeploy/.mim/tools *.py *.sh
+recursive-include mmdeploy/.mim/demo *.py
