@@ -1,7 +1,9 @@
 #!/bin/bash
 
-PPLCV_DIR=/home/ezgolf/ProjectGolf/Projects/ppl.cv
-PROTO_DIR=/home/ezgolf/miniconda3/envs/golfpose
+#PPLCV_DIR=/home/ezgolf/ProjectGolf/Projects/ppl.cv
+#PROTO_DIR=/home/ezgolf/miniconda3/envs/golfpose
+PPLCV_DIR=/data/ProjectGolf/Projects/ppl.cv
+PROTO_DIR=/home/zengjianping/miniconda3/envs/golfpose
 
 cmake .. \
     -DMMDEPLOY_BUILD_SDK=ON \
